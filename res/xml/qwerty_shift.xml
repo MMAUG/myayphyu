@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="@dimen/key_height"
+    >
+
+    <Row>
+        <Key android:codes="4104" android:keyLabel="ဈ" android:keyEdgeFlags="left"/>
+        <Key android:codes="4125" android:keyLabel="ဝ"/>
+        <Key android:codes="4098" android:keyLabel="ဂ"/>
+        <Key android:codes="4174" android:keyLabel="၎"/>
+        <Key android:codes="4132" android:keyLabel="ဤ"/>
+        <Key android:codes="4172" android:keyLabel="၌"/>
+        <Key android:codes="4133,4134" android:keyLabel="ဥ"/>
+        <Key android:codes="4173" android:keyLabel="၍"/>
+        <Key android:codes="4159" android:keyLabel="ဿ"/>
+        <Key android:codes="4111,4110" android:keyLabel="ဏ" android:keyEdgeFlags="right"/>
+    </Row>
+    
+    <Row>
+        <Key android:codes="4099" android:keyLabel="ဃ" android:keyEdgeFlags="left"/>
+        <Key android:codes="4158" android:keyLabel="ှ"/>
+        <Key android:codes="4142" android:keyLabel="ီ"/>
+        <Key android:codes="4153" android:keyLabel="္"/>
+        <Key android:codes="4157" android:keyLabel="ွ"/>
+        <Key android:codes="4150" android:keyLabel="ံ"/>
+        <Key android:codes="4146" android:keyLabel="ဲ"/>
+        <Key android:codes="4114" android:keyLabel="ဒ"/>
+        <Key android:codes="4115" android:keyLabel="ဓ"/>
+        <Key android:codes="4137,4138" android:keyLabel="ဩ" android:keyEdgeFlags="right"/>
+    </Row>
+    
+    <Row>
+        <Key android:codes="-1"
+             android:keyIcon="@drawable/sym_keyboard_shift"
+             android:keyWidth="15%p" android:isModifier="true"
+             android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="4103" android:keyLabel="ဇ" />
+        <Key android:codes="4108" android:keyLabel="ဌ"/>
+        <Key android:codes="4135" android:keyLabel="ဧ"/>
+        <Key android:codes="4127" android:keyLabel="ဟ"/>
+        <Key android:codes="4122" android:keyLabel="ယ"/>
+        <Key android:codes="4109,4107" android:keyLabel="ဍ" />
+        <Key android:codes="4123" android:keyLabel="ရ"/>
+        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete"
+                android:keyWidth="15%p" android:keyEdgeFlags="right"
+                android:isRepeatable="true"/>
+    </Row>
+    
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" 
+                android:keyWidth="20%p" android:keyEdgeFlags="left" />
+        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="15%p" />
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" android:keyWidth="30%p" 
+                android:isRepeatable="true"/>
+        <Key android:codes="8230" android:keyLabel="…" android:keyWidth="15%p" />
+        <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return"
+                android:keyWidth="20%p" android:keyEdgeFlags="right" />
+    </Row>
+</Keyboard>
