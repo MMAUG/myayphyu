@@ -36,6 +36,7 @@ public class ImePreferences extends PreferenceActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        isValidFragment("ImePreferences");
 
         // We overwrite the title of the activity, as the default one is "Voice Search".
         setTitle(R.string.settings_name);
@@ -52,4 +53,12 @@ public class ImePreferences extends PreferenceActivity {
             addPreferencesFromResource(R.xml.ime_preferences);
         }
     }
+
+  @Override
+  protected boolean isValidFragment (String fragmentName)
+  {
+    if(Settings.class.getName().equals(fragmentName))
+      return true;
+    return false;
+  }
 }
